@@ -65,7 +65,7 @@ Framework and Libraries –
 
 Application Snippets
 1.	Home Page of the application which is accessible by the domain name on public internet. User is supposed to enter the credentials to go ahead.
-
+<img src="http://himangini-project-1.uk" alt="Aimeos logo" title="Aimeos" align="right" height="60" />
  
 2.	Second Page of the application where user is expected to select the service of his/her choice
  
