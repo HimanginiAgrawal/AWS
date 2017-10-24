@@ -48,7 +48,7 @@ Basic Hardware Requirements –
 •	Intel Core i7
 •	2.40 GHz Processor
 •	8GB RAM 
-====
+
 Basic Software Requirements –
 •	Windows 
 •	Apache Maven 3.5.0
@@ -57,7 +57,7 @@ Basic Software Requirements –
 •	MySQL Server 5.7
 •	MySQL Workbench 6.3
 •	Spring Tool Suite 3.9
-====
+
 Framework and Libraries –
 •	Springboot Framework
 •	JDBC Connector
@@ -65,9 +65,10 @@ Framework and Libraries –
 •	Java Persistent API
 
 
-Application Snippets
+Application Snippet
+====
 1.	Home Page of the application which is accessible by the domain name on public internet. User is supposed to enter the credentials to go ahead.
-<img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Home.PNG" alt="Aimeos logo" title="Aimeos" align="right" height="60" />
+<img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Home.PNG" />
  
 2.	Second Page of the application where user is expected to select the service of his/her choice
  
