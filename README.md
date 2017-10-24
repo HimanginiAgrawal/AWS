@@ -71,21 +71,25 @@ Application Snippet
 <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Home.PNG" />
  
 2.	Second Page of the application where user is expected to select the service of his/her choice
+<img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Upload-Delete.PNG" />
  
 3.	More options available such as Download the file and List all the contents of your bucket
- 
+ <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Upload-Download.PNG" />
 
 4.	After choosing a file name for upload or delete a Bucket detail page will appear
 This page tracks the date and time of operation and the user details of the operator
- 
+ <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Bucket-Contents.PNG" />
  
 5.	If User selects a file for downloading a page giving details of the file with a downloadable link is prompted, such as below where Hello is the name of the file
+<img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Bucket-Contents.PNG" />
 
  
 6.	If the user wants to check all the files under his/her bucket, he/she has to give the name of the bucket in the input box and page giving list of all the files present in the bucket is displayed.
+<img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Download-File.PNG" />
  
 
 Solutions for Problem Statement
+---
 •	Register with Amazon Web Services
 •	Create an IAM user and provide the user access to S3 and EC2
 •	Create access key and secret key and provide the details in code
