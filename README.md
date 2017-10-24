@@ -81,12 +81,12 @@ This page tracks the date and time of operation and the user details of the oper
  <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Bucket-Contents.PNG" />
  
 5.	If User selects a file for downloading a page giving details of the file with a downloadable link is prompted, such as below where Hello is the name of the file
-<img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Bucket-Contents.PNG" />
 
- 
-6.	If the user wants to check all the files under his/her bucket, he/she has to give the name of the bucket in the input box and page giving list of all the files present in the bucket is displayed.
 <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Download-File.PNG" />
  
+6.	If the user wants to check all the files under his/her bucket, he/she has to give the name of the bucket in the input box and page giving list of all the files present in the bucket is displayed.
+
+ <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Bucket-Contents.PNG" />
 
 Solutions for Problem Statement
 ---
