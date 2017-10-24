@@ -74,11 +74,11 @@ Application Snippet
 <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Upload-Delete.PNG" />
  
 3.	More options available such as Download the file and List all the contents of your bucket
- <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Upload-Download.PNG" />
+
 
 4.	After choosing a file name for upload or delete a Bucket detail page will appear
 This page tracks the date and time of operation and the user details of the operator
- <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Bucket-Contents.PNG" />
+  <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Upload-Download.PNG" />
  
 5.	If User selects a file for downloading a page giving details of the file with a downloadable link is prompted, such as below where Hello is the name of the file
 
