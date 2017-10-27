@@ -3,13 +3,13 @@
 AWS extension
 ======================
 
-The repository contains the source code for a web application which is accessible over public internet.
+The repository contains the source code for a web application which is accessible over public internet.<br/>
 The application uses various aws features and is a highly available, highly scalable, cost effective solution
 
-•	University Name: http://www.sjsu.edu/
-•	Course: Cloud Technologies
-•	Professor Sanjay Garje
-•	ISA: Divyankitha Urs
+•	University Name: http://www.sjsu.edu/<br/>
+•	Course: Cloud Technologies<br/>
+•	Professor Sanjay Garje<br/>
+•	ISA: Divyankitha Urs<br/>
 •	Student: https://www.linkedin.com/in/himangini-agrawal-6a344029
 
 Introduction
@@ -19,52 +19,52 @@ Application creates a database for the registered users, where users maintain th
 
 Feature List
 ---
-1.	S3
-Scope of application is limited to the registered users, where user once logged in can manage their S3 bucket giving functionalities such as – 
-•	Upload files to S3 bucket (also tracking the user details)
-•	Download files which are already present in the bucket
-•	Delete the not required files from S3 bucket
-•	User details and date and time are tracked against all operations
-2.	EC2
+1.	S3<br/>
+Scope of application is limited to the registered users, where user once logged in can manage their S3 bucket giving functionalities such as – <br/>
+•	Upload files to S3 bucket (also tracking the user details)<br/>
+•	Download files which are already present in the bucket<br/>
+•	Delete the not required files from S3 bucket<br/>
+•	User details and date and time are tracked against all operations<br/>
+2.	EC2<br/>
 Application uses EC2 features for web hosting and has auto scaling implemented for the purposes of instance scaling and management. 
 Elastic Load Balancing is applied across EC2 instances to distribute incoming traffic and increase fault tolerance.
-3.	CloudFront
+3.	CloudFront<br/>
 CloudFront is configured to speeds up the distribution of dynamic web content to all the users worldwide
-4.	S3 Transfer Acceleration
+4.	S3 Transfer Acceleration<br/>
 Bucket created in the application uses S3 Transfer Acceleration to make customers upload to a centralized bucket from all over the world
-5.	Route53
+5.	Route53<br/>
 Application uses R53 for DNS web service to route end users from a domain name to a numeric IP address
-6.	Lambda
+6.	Lambda<br/>
 Lambda function is invoked to start and stop EC2 instances running the application at scheduled intervals
-7.	CloudWatch
+7.	CloudWatch<br/>
 CloudWatch is triggering an event to invoke lambda. 
 CloudWatch is configured at predefined times 
-8.	SNS
+8.	SNS<br/>
 Simple Notification Service(SNS) sends mail to the user every time an EC2 instance is started on stopped
-9.	RDS
+9.	RDS<br/>
 Relational Database Service is used in the application for deploying scalable MySQL servers with resizable hardware capacity
 
 Pre-Requisites 
 ================================
-Basic Hardware Requirements –
-•	Intel Core i7
-•	2.40 GHz Processor
-•	8GB RAM 
+Basic Hardware Requirements –<br/>
+•	Intel Core i7<br/>
+•	2.40 GHz Processor<br/>
+•	8GB RAM <br/>
 
-Basic Software Requirements –
-•	Windows 
-•	Apache Maven 3.5.0
-•	Java 8
-•	Apache Tomcat 8
-•	MySQL Server 5.7
-•	MySQL Workbench 6.3
-•	Spring Tool Suite 3.9
+Basic Software Requirements –<br/>
+•	Windows <br/>
+•	Apache Maven 3.5.0<br/>
+•	Java 8<br/>
+•	Apache Tomcat 8<br/>
+•	MySQL Server 5.7<br/>
+•	MySQL Workbench 6.3<br/>
+•	Spring Tool Suite 3.9<br/>
 
-Framework and Libraries –
-•	Springboot Framework
-•	JDBC Connector
-•	AWS Java SDK
-•	Java Persistent API
+Framework and Libraries –<br/>
+•	Springboot Framework<br/>
+•	JDBC Connector<br/>
+•	AWS Java SDK<br/>
+•	Java Persistent API<br/>
 
 
 Application Snippet
@@ -92,16 +92,16 @@ This page tracks the date and time of operation and the user details of the oper
 
 Setup
 ---
-•	Install STS 
-•	Download the github repo on local machine
-•	Import the project from download forlder to STS as maven project
-•	Goto src/main/java under S3 services, give your AWS access key and secret key
-•	Configure the project to run on Tomcat 8
-•	System should have Java 8 and Tomcat 8
-•	Run the project on server
-•	Give below Credentials to use the app-
-username - ha
-password - ha
+•	Install STS <br/>
+•	Download the github repo on local machine<br/>
+•	Import the project from download forlder to STS as maven project<br/>
+•	Goto src/main/java under S3 services, give your AWS access key and secret key<br/>
+•	Configure the project to run on Tomcat 8<br/>
+•	System should have Java 8 and Tomcat 8<br/>
+•	Run the project on server<br/>
+•	Give below Credentials to use the app-<br/>
+username - ha<br/>
+password - ha<br/>
 
 NOTE- The application will by default use my S3 bucket, to use your own bucket create the bucket and provide the name in source code under S3 services
 
