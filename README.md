@@ -95,14 +95,20 @@ Setup
 •	Install STS <br/>
 •	Download the github repo on local machine<br/>
 •	Import the project from download forlder to STS as maven project<br/>
+•	Create connection with JDBC Driver by configuring Access Credentials for Admin Properties<br/>
 •	Goto src/main/java under S3 services, give your AWS access key and secret key<br/>
+•	Inside the project folder from command line run-<br/>
+mvn clean<br/>
+mvn install<br/>
+mvn package<br/>
 •	Configure the project to run on Tomcat 8<br/>
 •	System should have Java 8 and Tomcat 8<br/>
 •	Run the project on server<br/>
 •	Give below Credentials to use the app-<br/>
 username - ha<br/>
 password - ha<br/>
-
+OR<br/>
+•	In MySql Workbench, create a new connection at localhost and port 3306 and create the required database and tables by running the SQL queries<br/>
 NOTE- The application will by default use my S3 bucket, to use your own bucket create the bucket and provide the name in source code under S3 services
 
 
