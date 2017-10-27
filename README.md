@@ -16,6 +16,7 @@ Introduction
 ============================
 The idea of my application is to give user a reliable, scalable, secure and highly performing infrastructure for the most demanding features of AWS. Extremely available and highly scalable web hosting is usually a complex and expensive proposition. My Application provides Cloud Storage, File Synchronization and Personal Cloud features. The user can keep safe and secured data without much hassle using very simple GUI features maintaining a repository in cloud, saving the cost of high end hardware requirements.
 Application creates a database for the registered users, where users maintain their folders contents to which are then synchronized with AWS features. App users are given unlimited storage leveraging all the amazon features. 
+
 Feature List
 ---
 1.	S3
