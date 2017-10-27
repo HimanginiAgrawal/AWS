@@ -42,7 +42,7 @@ Simple Notification Service(SNS) sends mail to the user every time an EC2 instan
 9.	RDS
 Relational Database Service is used in the application for deploying scalable MySQL servers with resizable hardware capacity
 
-Technologies Used
+Pre-Requisites 
 ================================
 Basic Hardware Requirements –
 •	Intel Core i7
@@ -88,42 +88,19 @@ This page tracks the date and time of operation and the user details of the oper
 
  <img src="https://s3-us-west-2.amazonaws.com/himanginiaws/Bucket-Contents.PNG" />
 
-Solutions for Problem Statement
+Setup
 ---
-•	Register with Amazon Web Services
-•	Create an IAM user and provide the user access to S3 and EC2
-•	Create access key and secret key and provide the details in code
-•	Create a bucket in S3
-•	Create a CloudFront and make the bucket an edge location. This is to speed up our web page content
-•	Use the SpringFramework to ease the coding part
-•	Once the application is built, launch a RDS instance on MySQL engine
-•	Choose Multi-AZ deployment for high scalability
-•	Create a table using workbench which will interact with the code
-•	Launch EC2 instances attach the above IAM role
-•	Create an ELB connecting all the EC2 instances and apply auto scaling feature
-•	Assign an elastic IP which can now access the application hosted on EC2
-•	Register a private domain. Once the domain is active, use Route53 to create Name Servers and Start of Authority
-•	CloudWatch is applied on EC2 instance for CPU utilization and NetworkIN/OUT
-•	Based on CloudWatch logs a Lambda Function is invoked generating an email to the list and autoscaling EC2 instance
-•	Create a new record set under Route53 which will use your domain name to point to ELB
-•	Finally, access your web contents over public internet using domain name
-For Monitoring and Alarm,
-•	CloudWatch is implemented on EC2 instances, if the instances enter unhealthy state a Lambda Function is invoked which will spun up a new EC2 instance with similar configurations
-•	An SNS event will send a mail to the user stating EC2 details
-For Auto Recovery Process,
-•	A bucket for cross-region replication with same user data is created
-•	Multi AZ architecture for database and application deployment is implemented
-For Re-balancing the traffic,
-•	Elastic load balancing is configured on EC2 instances and auto scaling group is created. Thereby, giving maximum application availability in case of huge traffic.
-•	Every S3 bucket has Transfer Acceleration enabled to fully utilize the internet bandwidth
-•	Single AZ DB is implemented as part of this project which can be scaled.
-For cost saving,
-•	Appropriate size of EC2 instance is launched, which can later be scaled in number
-Steps to covert the single AZ DB into multi-AZ, 
-1.	Launch two same RDS instances(clone) in two different AZs present in the same region, where one should act as Master and other one Standby. 
-2.	There should be a synchronous replication of data between Master and Standby.
-3.	 For higher availability RDS service switches the database name from Master to Standby.  
-4.	Both the instances should be present on same Virtual Private Cloud
+•	Install STS 
+•	Download the github repo on local machine
+•	Import the project from download forlder to STS as maven project
+•	Configure the project to run on Tomcat 8
+•	System should have Java 8 and Tomcat 8
+•	Run the project on server
+•	Give below Credentials to use the app-
+username - ha
+password - ha
+
+
 
 
 
