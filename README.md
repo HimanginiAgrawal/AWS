@@ -17,6 +17,7 @@ Introduction
 The idea of my application is to give user a reliable, scalable, secure and highly performing infrastructure for the most demanding features of AWS. Extremely available and highly scalable web hosting is usually a complex and expensive proposition. My Application provides Cloud Storage, File Synchronization and Personal Cloud features. The user can keep safe and secured data without much hassle using very simple GUI features maintaining a repository in cloud, saving the cost of high end hardware requirements.
 Application creates a database for the registered users, where users maintain their folders contents to which are then synchronized with AWS features. App users are given unlimited storage leveraging all the amazon features. 
 Feature List
+---
 1.	S3
 Scope of application is limited to the registered users, where user once logged in can manage their S3 bucket giving functionalities such as – 
 •	Upload files to S3 bucket (also tracking the user details)
@@ -93,12 +94,15 @@ Setup
 •	Install STS 
 •	Download the github repo on local machine
 •	Import the project from download forlder to STS as maven project
+•	Goto src/main/java under S3 services, give your AWS access key and secret key
 •	Configure the project to run on Tomcat 8
 •	System should have Java 8 and Tomcat 8
 •	Run the project on server
 •	Give below Credentials to use the app-
 username - ha
 password - ha
+
+NOTE- The application will by default use my S3 bucket, to use your own bucket create the bucket and provide the name in source code under S3 services
 
 
 
